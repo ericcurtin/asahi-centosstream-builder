@@ -10,7 +10,7 @@ current_directory=$(dirname $(readlink -f $0))
 # this has to match the volume_id in installer_data.json
 # "volume_id": "0x2abf9f91"
 EFI_UUID=2ABF-9F91
-BTRFS_UUID=$(uuidgen)
+ROOT_UUID=$(uuidgen)
 
 if [ "$(whoami)" != 'root' ]; then
     echo "You must be root to run this script."
@@ -42,7 +42,7 @@ make_image() {
     rm -rf $image_dir/$image_name/*
     truncate -s ${size}M $image_dir/$image_name/root.img
     echo '### Creating filesystem...'
-    echo '### Making filesystem...'
+    echo "mkfs.ext4 -O '^metadata_csum' -U $ROOT_UUID -L 'asahi-root' $image_dir/$image_name/root.img"
     mkfs.ext4 -O '^metadata_csum' -U $ROOT_UUID -L 'asahi-root' $image_dir/$image_name/root.img
     echo '### Loop mounting...'
     mount -o loop $image_dir/$image_name/root.img $image_mnt
