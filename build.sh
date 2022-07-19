@@ -64,9 +64,11 @@ make_image() {
     echo "### Creating BLS (/boot/loader/entries/) entry..."
     chroot $image_mnt /image.creation/create.bls.entry
     echo "### Enabling system services..."
-    chroot $image_mnt systemctl enable iwd.service sshd.service systemd-networkd.service
+    chroot $image_mnt systemctl enable sshd.service
     echo "### Disabling systemd-firstboot..."
     chroot $image_mnt rm -f /usr/lib/systemd/system/sysinit.target.wants/systemd-firstboot.service
+    echo "### Restoring centos.repo..."
+    chroot $image_mnt mv /etc/yum.repos.d/centos.repo.rpmnew /etc/yum.repos.d/centos.repo
     echo '### Creating EFI system partition tree...'
     mkdir -p $image_dir/$image_name/esp/
     rsync -aHAX $image_mnt/boot/efi/ $image_dir/$image_name/esp/
