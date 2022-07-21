@@ -10,4 +10,4 @@ initramfs=$(ls /boot | grep ^initramfs)
 kernel_version=$(rpm -q kernel | sed 's/kernel-//')
 title="${NAME} (${kernel_version}) ${VERSION}"
 
-grubby --add-kernel=/boot/boot/$kernel_vmlinuz --initrd=/boot/$initramfs --title "$title"
+grubby --add-kernel=/boot/$kernel_vmlinuz --initrd=/boot/$initramfs --title "$title"
