@@ -41,7 +41,7 @@ Packages=
     linux-firmware
     net-tools
     m1n1
-    #m1n1-tools
+    m1n1-tools
     man-db
     man-pages
     ncurses
