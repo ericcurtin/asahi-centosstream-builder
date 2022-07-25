@@ -3,7 +3,7 @@ Distribution=centos
 Release=9-stream
 Architecture=aarch64
 UseHostRepositories=yes
-Repositories=baseos,appstream,crb,asahi-linux
+Repositories=baseos,appstream,crb,epel,asahi-linux
 
 [Output]
 Format=directory
@@ -29,6 +29,7 @@ Packages=
     dnf-plugins-core
     e2fsprogs
     efivar
+    epel-release
     findutils
     grub2-efi-aa64
     grub2-efi-aa64-modules
@@ -36,6 +37,7 @@ Packages=
     hostname
     iproute
     iputils
+    iwd
     kernel
     kmod
     linux-firmware
@@ -52,6 +54,7 @@ Packages=
     rootfiles
     rpm
     rsync
+    systemd-networkd
     sudo
     tar
     usbutils
