@@ -2,6 +2,8 @@
 
 Builds a minimal CentOS Stream 9 image to run on Apple M1 systems. Kudos to Leif Liddy and Asahi community for helping make this happen.
 
+This is completely unofficial and on a best-effort basis. It's for personal usage, but if you'd like to use it and contribute great.
+
 ## package install for building images
 
 ```dnf install mkosi arch-install-scripts systemd-container zip qemu-user-static```  
