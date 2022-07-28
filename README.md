@@ -10,7 +10,7 @@ This is completely unofficial and on a best-effort basis. It's for personal usag
 
 note: ```qemu-user-static``` is not needed if building the image on an ```aarch64``` system.   
 
-note: at present building the arch-install-scripts is only available on fedora 35/36
+note: at present building the arch-install-scripts rpm is only available on fedora 35/36
 
 ## To install a prebuilt image
 
