@@ -8,6 +8,8 @@ Builds a minimal CentOS Stream 9 image to run on Apple M1 systems. Kudos to Leif
 
 note: ```qemu-user-static``` is not needed if building the image on an ```aarch64``` system.   
 
+note: at present building the arch-install-scripts is only available on fedora 35/36
+
 ## To install a prebuilt image
 
 Make sure to update your macOS to version 12.3 or later, then just pull up a Terminal in macOS and paste in this command:
