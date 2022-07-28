@@ -7,7 +7,7 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-9&arch=$basearch&i
 enabled=1
 gpgcheck=1
 countme=1
-gpgkey=https://www.leifliddy.com/.centos/RPM-GPG-KEY-EPEL-9
+gpgkey=https://ecurtin.fedorapeople.org/.centos/RPM-GPG-KEY-EPEL-9
 
 [epel-debuginfo]
 name=Extra Packages for Enterprise Linux 9 - $basearch - Debug
@@ -16,7 +16,7 @@ name=Extra Packages for Enterprise Linux 9 - $basearch - Debug
 #baseurl=https://download.example/pub/epel/9/Everything/$basearch/debug/
 metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-9&arch=$basearch&infra=$infra&content=$contentdir
 enabled=0
-gpgkey=https://www.leifliddy.com/.centos/RPM-GPG-KEY-EPEL-9
+gpgkey=https://ecurtin.fedorapeople.org/.centos/RPM-GPG-KEY-EPEL-9
 gpgcheck=1
 
 [epel-source]
@@ -26,5 +26,5 @@ name=Extra Packages for Enterprise Linux 9 - $basearch - Source
 #baseurl=https://download.example/pub/epel/9/Everything/source/tree/
 metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-source-9&arch=$basearch&infra=$infra&content=$contentdir
 enabled=0
-gpgkey=https://www.leifliddy.com/.centos/RPM-GPG-KEY-EPEL-9
+gpgkey=https://ecurtin.fedorapeople.org/.centos/RPM-GPG-KEY-EPEL-9
 gpgcheck=1
