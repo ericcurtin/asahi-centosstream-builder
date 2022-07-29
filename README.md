@@ -25,7 +25,7 @@ curl https://ecurtin.fedorapeople.org/centos.sh | sh
 2. On the first boot the ```asahi-firstboot.service``` will run and will take around ```45 seconds``` to complete.  
    Do not shutdown or reboot the system before this service has completed.  
 3. The Asahi Linux-related RPM's (and Source RPM's) used in this image can be found here:  
-   https://ecurtin.fedorapeople.org/asahi-linux/36/  
+   https://ecurtin.fedorapeople.org/asahi-linux/9-stream/
    All RPM's signed are signed by a GPG key.  
    The repo config can be found here:   
    https://ecurtin.fedorapeople.org/asahi-linux/asahi-linux.repo  

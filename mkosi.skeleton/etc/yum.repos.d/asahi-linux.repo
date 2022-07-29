@@ -1,5 +1,5 @@
 [asahi-linux]
-name=Asahi Fedora $releasever - $basearch
+name=Asahi CentOS Stream $releasever - $basearch
 baseurl=https://ecurtin.fedorapeople.org/asahi-linux/9-stream/$basearch/
 enabled=1
 skip_if_unavailable=1
@@ -9,7 +9,7 @@ gpgcheck=1
 gpgkey=https://ecurtin.fedorapeople.org/asahi-linux/RPM-GPG-KEY-asahi
 
 [asahi-linux-source]
-name=Asahi Fedora $releasever - $basearch - Source
+name=Asahi CentOS Stream $releasever - $basearch - Source
 baseurl=https://ecurtin.fedorapeople.org/asahi-linux/9-stream/source/SRPMS/
 enabled=0
 skip_if_unavailable=1
